@@ -14,33 +14,13 @@
 
 # Project Setup
 
-- Inside the `src/config` folder create a file name `config.json` and write the following code
+- Inside the `src/config` folder create a file named `config.json` execute the following command
 
 ```
-{
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
+npx sequalize init
 ```
+
+- By use this command you will get `migration`,`seeders` and `config.json` folder
 
 - If you are setting up your development environment ,then write the username you db ,password in your db. In dialect mentioned whatever db you are using ex- mysql,mariadb etc.
 
